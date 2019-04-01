@@ -1,0 +1,103 @@
+{
+  "classes": [
+	{
+      "name": "Component",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "INTERFACE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod8",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "name": "ConcreteComponent",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod8",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "name": "Decorator",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [
+        {
+          "name": "component",
+          "modifiers": [
+            "private"
+          ],
+          "type": {
+            "typeName": "Component",
+            "multiplicity": "ONE"
+          }
+        }
+      ],
+      "operations": [
+        {
+          "name": "iMethod8",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    }
+	],
+ "generalizationRelations": [	
+	    {
+      "subClass": "ConcreteComponent",
+      "superClass": "Component",
+      "generalizationKing": "REALIZATION"
+    },
+	    {
+      "subClass": "Decorator",
+      "superClass": "Component",
+      "generalizationKing": "REALIZATION"
+    }
+	],
+  "associationRelations": [	
+	    {
+      "leftClass": "Decorator",
+      "rightClass": "Component",
+      "associationKind": "DIRECT"
+    }
+	]
+}	
+	
+	
+	
+	
+	
+	

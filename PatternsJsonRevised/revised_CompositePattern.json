@@ -1,0 +1,111 @@
+{
+  "classes": [
+    {
+      "name": "Component",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "operation",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "name": "Composite",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [
+        {
+          "name": "componentList",
+          "modifiers": [
+            "private"
+          ],
+          "type": {
+            "typeName": "Component",
+            "multiplicity": "MANY"
+          }
+        }
+      ],
+      "operations": [
+        {
+          "name": "operation",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        },
+        {
+          "name": "attach",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "component",
+              "modifiers": [],
+              "type": {
+                "typeName": "Component",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        },
+        {
+          "name": "detach",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "component",
+              "modifiers": [],
+              "type": {
+                "typeName": "Component",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        } 
+      ]
+    }
+	],
+  "generalizationRelations": [
+    {
+      "subClass": "Composite",
+      "superClass": "Component",
+      "generalizationKing": "INHERITANCE"
+    }	
+	],
+  "associationRelations": [	
+	{
+      "leftClass": "Composite",
+      "rightClass": "Component",
+      "associationKind": "DIRECT"
+    }
+	]
+}

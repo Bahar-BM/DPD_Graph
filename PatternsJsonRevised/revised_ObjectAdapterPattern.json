@@ -1,0 +1,92 @@
+{
+  "classes": [
+    {
+      "name": "Target",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "INTERFACE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod1",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "name": "Adaptee",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod1",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "name": "Adapter",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [
+	    {
+          "name": "adaptee",
+          "modifiers": [
+            "private"
+          ],
+          "type": {
+            "typeName": "Adaptee",
+            "multiplicity": "ONE"
+          }
+        }
+	  ],
+      "operations": [
+	    {
+          "name": "iMethod1",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+	  ]
+    }
+	],
+  "generalizationRelations": [
+    {
+      "subClass": "Adapter",
+      "superClass": "Target",
+      "generalizationKing": "REALIZATION"
+    }	
+	],
+	  "associationRelations": [
+    {
+      "leftClass": "Adapter",
+      "rightClass": "Adaptee",
+      "associationKind": "DIRECT"
+    }
+	]
+}

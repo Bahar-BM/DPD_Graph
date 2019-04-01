@@ -1,0 +1,275 @@
+{
+  "classes": [
+    {
+      "name": "Visitor",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "INTERFACE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod20",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "elementA",
+              "modifiers": [],
+              "type": {
+                "typeName": "ConcreteElementA",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        },
+        {
+          "name": "iMethod21",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "elementB",
+              "modifiers": [],
+              "type": {
+                "typeName": "ConcreteElementB",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ConcreteVisitor",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod20",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "elementA",
+              "modifiers": [],
+              "type": {
+                "typeName": "ConcreteElementA",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        },
+        {
+          "name": "iMethod21",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "elementB",
+              "modifiers": [],
+              "type": {
+                "typeName": "ConcreteElementB",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Element",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "INTERFACE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod22",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "in",
+              "modifiers": [],
+              "type": {
+                "typeName": "Visitor",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ConcreteElement",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod22",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "visitor",
+              "modifiers": [],
+              "type": {
+                "typeName": "Visitor",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ObjectStructure",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [
+        {
+          "name": "elementList",
+          "modifiers": [
+            "private"
+          ],
+          "type": {
+            "typeName": "Element",
+            "multiplicity": "MANY"
+          }
+        }
+      ],
+      "operations": [
+        {
+          "name": "attach",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "element",
+              "modifiers": [],
+              "type": {
+                "typeName": "Element",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        },
+        {
+          "name": "detach",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "element",
+              "modifiers": [],
+              "type": {
+                "typeName": "Element",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        },
+        {
+          "name": "accept",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "visitor",
+              "modifiers": [],
+              "type": {
+                "typeName": "Visitor",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generalizationRelations": [
+    {
+      "subClass": "ConcreteVisitor",
+      "superClass": "Visitor",
+      "generalizationKing": "REALIZATION"
+    },
+    {
+      "subClass": "ConcreteVisitor",
+      "superClass": "Element",
+      "generalizationKing": "REALIZATION"
+    },
+    {
+      "subClass": "ConcreteElement",
+      "superClass": "Element",
+      "generalizationKing": "REALIZATION"
+    }
+  ],
+  "associationRelations": [
+    {
+      "leftClass": "ObjectStructure",
+      "rightClass": "Element",
+      "associationKind": "DIRECT"
+    }
+  ]
+}	
+	
+	
+	
+	
+	
+	

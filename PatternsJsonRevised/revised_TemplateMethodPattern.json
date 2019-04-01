@@ -1,0 +1,71 @@
+{
+  "classes": [
+    {
+      "name": "AbstractClass",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "templateMethod",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        },
+        {
+          "name": "primitiveOperation",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "name": "ConcreteClass",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "primitiveOperation",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    }
+	],
+	
+  "generalizationRelations": [
+	    {
+      "subClass": "ConcreteClass",
+      "superClass": "AbstractClass",
+      "generalizationKing": "INHERITANCE"
+    }
+]	
+}	
+	
+	
+	
+	
+	
+	

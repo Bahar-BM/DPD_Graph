@@ -1,0 +1,383 @@
+
+{
+  "groupsInfo": [
+    {
+      "groupName": "Abstract Factory",
+      "instances": [
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class1",
+              "role": "AbstractFactory"
+            },
+            {
+              "classId": "Class2",
+              "role": "ConcreteFactory"
+            },
+            {
+              "classId": "Class3",
+              "role": "Product"
+            }
+          ]
+        },
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class5",
+              "role": "AbstractFactory"
+            },
+            {
+              "classId": "Class6",
+              "role": "ConcreteFactory"
+            },
+            {
+              "classId": "Class7",
+              "role": "Product"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupName": "Adapter",
+      "instances": [
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class9",
+              "role": "Target"
+            },
+            {
+              "classId": "Class10",
+              "role": "Adaptee"
+            },
+            {
+              "classId": "Class11",
+              "role": "Adapter"
+            }
+          ]
+        },
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class13",
+              "role": "Target"
+            },
+            {
+              "classId": "Class14",
+              "role": "Adaptee"
+            },
+            {
+              "classId": "Class15",
+              "role": "Adapter"
+            }
+          ]
+        },
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class17",
+              "role": "Target"
+            },
+            {
+              "classId": "Class18",
+              "role": "Adaptee"
+            },
+            {
+              "classId": "Class19",
+              "role": "Adapter"
+            }
+          ]
+        },
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class46",
+              "role": "Target"
+            },
+            {
+              "classId": "Class47",
+              "role": "Adaptee"
+            },
+            {
+              "classId": "Class48",
+              "role": "Adapter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupName": "Composite",
+      "instances": [
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class21",
+              "role": "Component"
+            },
+            {
+              "classId": "Class22",
+              "role": "Composite"
+            }
+          ]
+        },
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class24",
+              "role": "Component"
+            },
+            {
+              "classId": "Class25",
+              "role": "Composite"
+            }
+          ]
+        },
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class28",
+              "role": "Component"
+            },
+            {
+              "classId": "Class29",
+              "role": "Composite"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupName": "Decorator",
+      "instances": [
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class31",
+              "role": "Component"
+            },
+            {
+              "classId": "Class32",
+              "role": "ConcreteComponent"
+            },
+            {
+              "classId": "Class33",
+              "role": "Decorator"
+            }
+          ]
+        },
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class34",
+              "role": "Component"
+            },
+            {
+              "classId": "Class35",
+              "role": "Decorator"
+            }
+          ]
+        },
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class79",
+              "role": "Component"
+            },
+            {
+              "classId": "Class80",
+              "role": "Decorator"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupName": "Factory Method",
+      "instances": [
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class39",
+              "role": "Creator"
+            },
+            {
+              "classId": "Class40",
+              "role": "ConcreteCreator"
+            },
+            {
+              "classId": "Class42",
+              "role": "ConcreteProduct"
+            }
+          ]
+        },
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class43",
+              "role": "Creator"
+            },
+            {
+              "classId": "Class44",
+              "role": "ConcreteCreator"
+            },
+            {
+              "classId": "Class45",
+              "role": "ConcreteProduct"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupName": "Observer",
+      "instances": [
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class50",
+              "role": "Subject"
+            },
+            {
+              "classId": "Class51",
+              "role": "Observer"
+            }
+          ]
+        },
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class53",
+              "role": "Subject"
+            },
+            {
+              "classId": "Class56",
+              "role": "Observer"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupName": "State",
+      "instances": [
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class58",
+              "role": "Context"
+            },
+            {
+              "classId": "Class59",
+              "role": "State"
+            },
+            {
+              "classId": "Class60",
+              "role": "ConcreteState"
+            },
+            {
+              "classId": "Class61",
+              "role": "ConcreteState"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupName": "Strategy",
+      "instances": [
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class63",
+              "role": "Context"
+            },
+            {
+              "classId": "Class64",
+              "role": "Strategy"
+            }
+          ]
+        },
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class68",
+              "role": "Strategy"
+            },
+            {
+              "classId": "Class69",
+              "role": "Context"
+            }
+          ]
+        },
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class72",
+              "role": "Context"
+            },
+            {
+              "classId": "Class73",
+              "role": "Strategy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupName": "Template Method",
+      "instances": [
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class76",
+              "role": "AbstractClass"
+            },
+            {
+              "classId": "Class77",
+              "role": "ConcreteClass"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "groupName": "Visitor",
+      "instances": [
+        {
+          "entriesInfo": [
+            {
+              "classId": "Class84",
+              "role": "Visitor"
+            },
+            {
+              "classId": "Class85",
+              "role": "ConcreteVisitor"
+            },
+            {
+              "classId": "Class86",
+              "role": "ConcreteVisitor"
+            },
+            {
+              "classId": "Class87",
+              "role": "Element"
+            },
+            {
+              "classId": "Class88",
+              "role": "ConcreteElement"
+            },
+            {
+              "classId": "Class89",
+              "role": "ConcreteElement"
+            },
+            {
+              "classId": "Class90",
+              "role": "ObjectStructure"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

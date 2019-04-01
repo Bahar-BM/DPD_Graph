@@ -1,0 +1,43 @@
+{
+  "classes": [
+    {
+      "name": "Singleton",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "Singleton",
+      "attributes": [
+	  	{
+          "name": "instance",
+          "modifiers": [
+            "private"
+          ],
+          "type": {
+            "typeName": "Singleton",
+            "multiplicity": "ONE"
+          }
+        }
+	  ],
+      "operations": [
+        {
+          "name": "getinstance",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "Singleton",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    }
+	],
+  "associationRelations": [	
+	{
+      "leftClass": "Singleton",
+      "rightClass": "Singleton",
+      "associationKind": "DIRECT"
+    }
+	]
+}

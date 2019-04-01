@@ -1,0 +1,136 @@
+{
+  "classes": [
+    {
+      "name": "Context",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [
+        {
+          "name": "state",
+          "modifiers": [
+            "private"
+          ],
+          "type": {
+            "typeName": "State",
+            "multiplicity": "ONE"
+          }
+        }
+      ],
+      "operations": [
+        {
+          "name": "request",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        },
+        {
+          "name": "updateState",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "nextState",
+              "modifiers": [],
+              "type": {
+                "typeName": "State",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "State",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "INTERFACE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod13",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "context",
+              "modifiers": [],
+              "type": {
+                "typeName": "Context",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ConcreteState",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod13",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "context",
+              "modifiers": [],
+              "type": {
+                "typeName": "Context",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "generalizationRelations": [
+    {
+      "subClass": "ConcreteState",
+      "superClass": "State",
+      "generalizationKing": "REALIZATION"
+    }
+  ],
+  "associationRelations": [
+    {
+      "leftClass": "Context",
+      "rightClass": "State",
+      "associationKind": "DIRECT"
+    }
+  ]
+}	
+	
+	
+	
+	
+	
+	

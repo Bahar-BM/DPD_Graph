@@ -1,0 +1,165 @@
+{
+  "classes": [
+    {
+      "name": "Subject",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [
+        {
+          "name": "state",
+          "modifiers": [
+            "private"
+          ],
+          "type": {
+            "typeName": "int",
+            "multiplicity": "ONE"
+          }
+        },
+        {
+          "name": "observerList",
+          "modifiers": [
+            "private"
+          ],
+          "type": {
+            "typeName": "Observer",
+            "multiplicity": "MANY"
+          }
+        }
+      ],
+      "operations": [
+        {
+          "name": "notifyObservers",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        },
+        {
+          "name": "attach",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "observer",
+              "modifiers": [],
+              "type": {
+                "typeName": "Observer",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        },
+        {
+          "name": "detach",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "observer",
+              "modifiers": [],
+              "type": {
+                "typeName": "Observer",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        },
+        {
+          "name": "setState",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "newState",
+              "modifiers": [],
+              "type": {
+                "typeName": "int",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        },
+        {
+          "name": "getState",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "int",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "name": "Observer",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [
+        {
+          "name": "state",
+          "modifiers": [
+            "private"
+          ],
+          "type": {
+            "typeName": "int",
+            "multiplicity": "ONE"
+          }
+        }
+      ],
+      "operations": [
+        {
+          "name": "update",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": [
+            {
+              "name": "subject",
+              "modifiers": [],
+              "type": {
+                "typeName": "Subject",
+                "multiplicity": "ONE"
+              }
+            }
+          ]
+        }
+      ]
+    }
+	],
+	  "associationRelations": [
+    {
+      "leftClass": "Subject",
+      "rightClass": "Observer",
+      "associationKind": "DIRECT"
+    }
+	]
+}

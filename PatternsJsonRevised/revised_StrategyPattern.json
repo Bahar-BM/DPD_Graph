@@ -1,0 +1,70 @@
+{
+  "classes": [
+    {
+      "name": "Context",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [
+        {
+          "name": "instance",
+          "modifiers": [
+            "private"
+          ],
+          "type": {
+            "typeName": "Strategy",
+            "multiplicity": "ONE"
+          }
+        }
+      ],
+      "operations": [
+        {
+          "name": "make",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "name": "Strategy",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "INTERFACE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod14",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    }
+	],
+"associationRelations":[
+    {
+      "leftClass": "Context",
+      "rightClass": "Strategy",
+      "associationKind": "DIRECT"
+    }
+	]	
+}	
+	
+	
+	
+	
+	
+	

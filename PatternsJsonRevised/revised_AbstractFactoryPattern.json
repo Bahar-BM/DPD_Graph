@@ -1,0 +1,69 @@
+{
+  "classes": [
+    {
+      "name": "AbstractFactory",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "INTERFACE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod1",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "Product",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "name": "ConcreteFactory",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [],
+      "operations": [
+        {
+          "name": "iMethod1",
+          "modifiers": [
+            "public"
+          ],
+          "returnType": {
+            "typeName": "void",
+            "multiplicity": "ONE"
+          },
+          "parameters": []
+        }
+      ]
+    },
+    {
+      "name": "Product",
+      "modifiers": [
+        "public"
+      ],
+      "classType": "CONCRETE",
+      "attributes": [],
+      "operations": []
+    }
+	],
+  "generalizationRelations": [
+    {
+      "subClass": "ConcreteFactory",
+      "superClass": "AbstractFactory",
+      "generalizationKing": "REALIZATION"
+    }	
+	],
+	
+	  "dependencyRelations": [
+    {
+      "clientClass": "ConcreteFactory",
+      "supplierClass": "Product"
+    }
+	]
+}
